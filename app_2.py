@@ -347,9 +347,6 @@ def main():
                 st.write(f'Negative⛔👎{x["negative"]}')
                 data = {'Sentiment': ['positive', 'neutral', 'negative'],
                         'Probability': [x["positive"], x["neutral"], x["negative"]]}
-
-                data = {'Sentiment': ['positive', 'neutral', 'negative'],
-                        'Probability': [0.9661, 0.0275, 0.0064]}
                 
                 df = pd.DataFrame(data)
 
@@ -357,15 +354,14 @@ def main():
                     X('Sentiment:N', title='Sentiment'),
                     Y('Probability:Q', title='Probability'),
                     Color('Sentiment:N',
-                        scale=Color(scale={'range': ['green', 'yellow', 'red']},
-                            domain=['positive', 'neutral', 'negative'],
-                            type='ordinal'),
-                            title='Sentiment Color')
-                    ).properties(
-                        title='Sentiment Analysis',
-                        width=400
-                    )
-                st.altair_chart(chart)#, use_container_width=True)
+                        scale=Color(range=['red', 'yellow', 'green'],
+                                    type='ordinal'),
+                        title='Sentiment Color')
+                ).properties(
+                    title='Sentiment Analysis',
+                    width=400
+                )
+                st.altair_chart(chart, use_container_width=True)
                 
             
             with col_3:
