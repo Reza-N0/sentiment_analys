@@ -281,13 +281,13 @@ def load_models_2():
     # config = AutoConfig.from_pretrained(MODEL)
     # top_model = AutoModelForSequenceClassification.from_pretrained(MODEL)
     names = ['CART', 'MLP', 'SVC', 'Log_Reg', 'NB', 'catboost', "XGboost"]
-    paths = [r'.\model_2\CART.pckl', 
-             r'.\model_2\MLP.pckl', 
-             r'.\model_2\svc.pckl', 
-             r'.\model_2\Logistic_Regression.pckl', 
-             r'.\model_2\nb.pckl', 
-             r'.\model_2\catboost.pckl', 
-             r'.\model_2\XGboost.pckl']
+    paths = ['model_2/CART.pckl', 
+             'model_2/MLP.pckl', 
+             'model_2/svc.pckl', 
+             'model_2/Logistic_Regression.pckl', 
+             'model_2/nb.pckl', 
+             'model_2/catboost.pckl', 
+             'model_2/XGboost.pckl']
     
     models = {}
     for name, path in zip(names,paths):
@@ -298,13 +298,13 @@ def load_models_2():
 
 def load_models_1():
     names = ['CART', 'MLP', 'SVC', 'Log_Reg', 'NB', 'catboost', "XGboost"]
-    paths = [r'model\CART.pckl', 
-             r'model\MLP.pckl', 
-             r'model\svc.pckl', 
-             r'model\Logistic_Regression.pckl', 
-             r'model\nb.pckl', 
-             r'model\catboost.pckl', 
-             r'model\XGboost.pckl']
+    paths = ['model/CART.pckl', 
+             'model/MLP.pckl', 
+             'model/svc.pckl', 
+             'model/Logistic_Regression.pckl', 
+             'model/nb.pckl', 
+             'model/catboost.pckl', 
+             'model/XGboost.pckl']
     
     models = {}
     for name, path in zip(names,paths):
