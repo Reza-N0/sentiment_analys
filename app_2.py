@@ -405,8 +405,6 @@ def main():
             - **Batman 140k Models:** Includes additional models trained on a larger dataset (Batman 140k). Displays the sentiment predictions and emojis for each model.
 
             #### Contributors:
-            - Zohre Bagheri
-            - Moein Zafari
             - Reza Naderi
 
             Feel free to input text and explore the sentiment predictions from different models."""      
